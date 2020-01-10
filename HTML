@@ -1,12 +1,19 @@
-#Criando um tag#
 <!DOCTYPE html> Passar informações para o navegador sobre qual versão do HTML estamos usando
-
 <html lang="pt-br">
 	<head> //A cabeça onde passamos todos os elementos que vao esta na parte de cima da pagina não no corpo
 		<meta charset="UTF-8"> passando mais informações para a pagina (Exemplo: se sua pagina foi feita em portugues e vc não passou esta tag, os assentos não vão aparecer
 		charset: seleciona o dicionário que vamos usar
 		UTF-8 é o dicionário escolhido
 		<title>Barbearia Alura</title>
+		<link rel="stylesheet" href="style.css">  referencia (como get e set) o novo arquivo style.css
+	
+	<style> 
+	Aqui podemos colocar as marcações como centralização dos texto da pagina dentre outras
+		p {
+		text-align: center
+		}
+	</style>
+		
     </head>
     <body>
 		<h1 style="text-align: center" >Titulo do texto</h1>  
@@ -24,4 +31,41 @@
 		
 	</body>
 </html>
+
+
+#NOVO ARQUIVO style.css
+
+as duas formas de usar o css.
+
+uma na mesma pagina html com o codigo:
+ <style> </style>
+ou com o código , pode abrir um nova pagina e colocar o codigo css
+ <link rel="stylesheet" href="style.css">
+
+
+#COLORIR OS ELEMENTOS DA PAGINA
+
+
+1º Mudar a cor dentro do texto
+style="background: #cccccc"
+
+2º Alterar a cor do plano de fundo da pagina:
+No css escre o comando.
+
+body{
+    background: #cccccc
+}
+
+3º Para alterar a cor de uma linha, primeiro marque ela na pagina como <strong>
+depois no css insira o codigo:
+
+Desta forma todos os paragrafos que tiverem o codigo <em><strong> devem ficar vermelho 
+em strong{
+    color: red;
+}
+
+
+
+
+
 
